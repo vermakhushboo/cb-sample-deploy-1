@@ -7,4 +7,8 @@ app.get("/", (req, res) => {
   console.log(res.send("Hello! This is a sample app"));
 });
 
+app.get("/hi",(req,res)=>{
+    res.send("hi"+res.query.name)
+})
+
 app.listen(port);
